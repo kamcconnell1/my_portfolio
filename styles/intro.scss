@@ -1,0 +1,50 @@
+
+.intro-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    
+      h1, h2 {
+        opacity:0;
+        background: var(--main2);
+        background: -webkit-linear-gradient(to right, var(--main1), var(--main2));  
+        background: linear-gradient(to right, var(--main1), var(--main2));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        font-size: 5rem;
+        letter-spacing: 0.2rem;
+        transition: 1000ms opacity ease-in-out;
+        margin-bottom: 5vh;
+      }
+      h2 {
+        transition-delay: 500ms;
+        margin-bottom: 10vh;
+        @media screen and (min-width: $laptop) {
+          font-size: 4rem;
+          margin-left: 8rem;
+        }
+        @media screen and (min-width: $desktop) {
+          width: max-content;
+          text-align: right; 
+          font-size: 5rem;
+        }
+      }
+      .title-fade {
+        opacity: 1;
+      }
+    }
+    .blurb {
+      font-size: 1.5rem;
+      opacity: 0;
+      transition: 200ms opacity ease-in-out;
+      transition-delay: 1000ms;
+    }
+  }
+

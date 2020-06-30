@@ -1,11 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KMC</title>
+  <link rel="icon" href="./assets/logo.png">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+  <script src='scripts/app.js'></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+
 <body>
-  <h1>Hello world</h1>
+  <nav class="navbar">
+    <ul class="navbar-nav">
+    <li class="nav-item">
+      <a href='#/' class="nav-link">
+        <i class="fas fa-home"></i>
+      <span class=link-text>HOME</span></a></li>
+    <li class="nav-item">
+      <a href='#about' class="nav-link">
+        <i class="far fa-user"></i>
+      <span class=link-text>ABOUT</span></a></li>
+    <li class="nav-item">
+      <a href='#skills' class="nav-link">
+        <i class="fas fa-user-cog"></i>
+      <span class=link-text>SKILLS</span></a></li>
+    <li class="nav-item">
+      <a href='#projects' class="nav-link">
+        <i class="fas fa-laptop"></i>
+      <span class=link-text>PROJECTS</span></a></li>
+    <li class="nav-item">
+      <a href='#contact' class="nav-link">
+        <i class="far fa-envelope"></i>
+      <span class=link-text>CONTACT</span></a></li>
+    <li class="nav-item" id='theme-button'>
+      <a href='' class="nav-link">
+        <input class="container_toggle" type="checkbox" id="switch" name="mode">
+        <label for="switch"></label>
+    </a>
+    </li>
+  </ul>
+  </nav>
+  <main>
+    <div class='nav' id='/'></div>
+  <div class="wrapper intro-wrapper" >
+    <div class="title">
+      <h1 id='title'>Hey,</h1>
+      <h2 id='subtitle'>I'm Katie</h2>
+      <h4 class="blurb" id='blurb'>Junior Developer - London</h4>
+    </div>
+  </div>
+  <div class='nav' id='about'></div>
+  <div class="wrapper about-wrapper">
+    <h3>About</h3>
+    <div class="about">
+    <div class="about-left">
+      <p>Having graduated as an Engineer and most recenty working in the property sector, I am now seeking opportunites as a Junior Developer. </p>
+      <p>After realising I was missing the challenges presented in a technical role I decided to enroll in General Assembly's Software Engineering Bootcamp, this provided me with a great understanding
+        across the whole stack.</p>
+      <p>I am perseverant and hardworking, driven to produce work that I am proud of. </p>
+    </div>
+    <div class="about-right">
+      <h5>Experience</h5>
+      <div class="experience">
+        <h6>Mar 2020 - Jun 2020 Software Engineering Immerive, General Assembly</h6>
+        <p>A full time course which covered full-stack development over 13 weeks. A typical day included morning stand up, lectures and workshop and daily homework tasks. Throughout the course we undertook four projects, a mixture of solo and group, based on the languages and fameworks learnt in the weeks prior.</p>
+      </div>
+      <div class="experience">
+        <h6>May 2016 - Mar 2020 Land & Acquisitions Manager, Bellis Homes</h6>
+        <p>My role oversaw projects from acquisition through to commencement on site. I assessed new sites for purchase, produced financial models for funding partners, managed the legal process for acquitions and coordinated the planning process.</p>
+      </div>
+      <div class="experience">
+        <h6>June 2011 - May 2016 Graduate Engineer, Pell Fischmann Consulting Engineers</h6>
+        <p>I started as a Summer Placement Student in my first year at University and contineud to work there throughout the University holidays, joining full time after Graduating. During this tiem I worked within both the Land Regeneration & Transport team and the Rail team.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class='nav' id='skills'></div>
+  <div class="wrapper technologies-wrapper">
+    <h3>Skills</h3>
+    <div class="logos-wrapper">
+      <div>
+        <i class="devicon-javascript-plain"></i>
+        <p>Javascript</p>
+      </div>
+      <div>
+        <i class="devicon-react-original"></i>
+        <p>React</p>
+      </div>
+      <div>
+        <i class="devicon-html5-plain"></i>
+        <p>HTML5</p>
+      </div>
+      <div>
+        <i class="devicon-css3-plain"></i>
+        <p>CSS3</p>
+      </div>
+      <div>
+        <i class="devicon-python-plain"></i>
+        <p>Python</p>
+      </div>
+      <div>
+        <i class="devicon-nodejs-plain"></i>
+        <p>Node.js</p>
+      </div>
+      <div>
+        <i class="devicon-express-original"></i>
+        <p>Express</p>
+      </div>
+      <div>
+        <i class="devicon-mongodb-plain"></i>
+        <p>MongoDB</p>
+      </div>
+      <div>
+        <i class="devicon-django-plain"></i>
+        <p>Django</p>
+      </div>
+      <div>
+        <i class="devicon-postgresql-plain"></i>
+        <p>PostgresSQL</p>
+      </div>
+      <div>
+        <i class="devicon-sass-original"></i>
+        <p>Sass</p>
+      </div>
+      <div>
+        <i class="devicon-git-plain"></i>
+        <p>Git</p>
+      </div>
+      <div>
+        <i class="devicon-github-plain"></i>
+        <p>GitHub</p>
+      </div>
+      <div>
+        <i class="devicon-heroku-original"></i>
+        <p>Heroku</p>
+      </div>
+      <div>
+        <i class="devicon-chrome-plain"></i>
+        <p>Chrome</p>
+      </div>
+      <div>
+        <i class="devicon-slack-plain"></i>
+        <p>Slack</p>
+      </div>
+      <div>
+        <i class="devicon-visualstudio-plain"></i>
+        <p>VS Code</p>
+      </div>
+    </div>
+  </div>
+  <div class='nav' id='projects'></div>
+  <div class="wrapper projects-wrapper">
+    <h3>Projects</h3>
+    <div class="projects">
+      <div class="project" data-aos="fade-in-up">
+          <img class='mobile' src='/assets/jobr.png' alt="jobr" id='jobr' >
+          <div class="slideshow-container desktop" >
+            <img class='mac' src='/assets/macbook.png' alt='macbook'>
+            <div class="slides">
+              <div class="slides1">
+                <img class='slide-img' src='/assets/slideshow/jobr/jobr2.png' alt="get-a-gif">
+              </div>
+              <div class="slides1">
+                <img class='slide-img' src='/assets/slideshow/jobr/jobr1.png' alt="get-a-gif">
+              </div>
+              <div class="slides1">
+                <img class='slide-img' src='/assets/slideshow/jobr/jobr3.png' alt="get-a-gif">
+              </div>
+              <div class="slides1">
+                <img class='slide-img' src='/assets/slideshow/jobr/jobr4.png' alt="get-a-gif">
+              </div>
+              <div class="slides1">
+                <img class='slide-img' src='/assets/slideshow/jobr/jobr5.png' alt="get-a-gif">
+              </div>
+              <div class="slides1">
+                <img class='slide-img' src='/assets/slideshow/jobr/jobr6.png' alt="get-a-gif">
+              </div>
+              <div class="slides1">
+                <img class='slide-img' src='/assets/slideshow/jobr/jobr7.png' alt="get-a-gif">
+              </div>
+              <div class="slides1">
+                <img class='slide-img' src='/assets/slideshow/jobr/jobr8.png' alt="get-a-gif">
+              </div>
+              <div class="slides1">
+                <img class='slide-img' src='/assets/slideshow/jobr/jobr9.png' alt="get-a-gif">
+              </div>
+              <button class="prev" name='prev' value=3 id='prev'>&#10094</button>
+              <button class="next" name='next' value=3 id='next'>&#10095</button>
+            </div>
+          </div>
+          <div class="description">
+            <h6>JOBR</h6>
+            <p>This was the final project at GA, produced with a group over 8 days. The brief required us to
+              build a full stack application using Django and React. We built JOBR, an app designed to help keep the job
+              search organised. Users can upload potential jobs and assign them a status from wishlist through to
+              rejected, add tasks to keep their ‘to-do’ list organised and upload resources they have found useful and
+              contacts they want to keep. SASS and React Semantic UI were used for the styling.</p>
+            <div>
+              <button><a href="https://jobrrrr.herokuapp.com/" target='_blank' rel='noopener noreferrer'>Open Project</a></button>
+              <button><a href="https://github.com/kamcconnell1/sei-project-4/blob/master/README.md" target='_blank'
+                  rel='noopener noreferrer'><i class="devicon-github-plain"></i>GitHub</a></button>
+            </div>
+          </div>
+        </div>
+      <div class="project" data-aos="fade-in-up">
+        <img class='mobile' src='/assets/getagif.png' alt='getagif'>
+        <div class="slideshow-container desktop">
+          <img class='mac' src='/assets/macbook.png' alt='macbook'>
+          <div class="slides">
+            <div class="slides2">
+              <img class='slide-img' src='/assets/slideshow/gif/gif1.png' alt="get-a-gif">
+            </div>
+            <div class="slides2">
+              <img class='slide-img' src='/assets/slideshow/gif/gif2.png' alt="get-a-gif">
+            </div>
+            <div class="slides2">
+              <img class='slide-img' src='/assets/slideshow/gif/gif3.png' alt="get-a-gif">
+            </div>
+            <div class="slides2">
+              <img class='slide-img' src='/assets/slideshow/gif/gif4.png' alt="get-a-gif">
+            </div>
+            <div class="slides2">
+              <img class='slide-img' src='/assets/slideshow/gif/gif5.png' alt="get-a-gif">
+            </div>
+            <button class="prev" name='prev' value=1 id='prev'>&#10094</button>
+            <button class="next" name='next' value=1 id='next'>&#10095</button>
+          </div>
+        </div>
+        <div class="description">
+          <h6>Get-a-Gif</h6>
+          <p>A paired project produced over 2 days. The brief was to build a React application which consumed a public
+            API. We produced an app using the Giphy API which allowed users to search for a Gif, view the latest
+            trending Gifs, add a Gif to their favourites to view later and copy a Gif to the clipboard. SASS and Bulma
+            were used in the styling.</p>
+          <div>
+            <button><a href="https://get-a-gif.netlify.app/" target='_blank' rel='noopener noreferrer'>Open Project</a></button>
+            <button><a href="https://github.com/kamcconnell1/sei-project-two/blob/master/README.md" target='_blank'
+                rel='noopener noreferrer'><i class="devicon-github-plain"></i>GitHub</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="project" data-aos="fade-in-up">
+        <img class='mobile' src='/assets/kebb.png' alt='kebb bazaar'>
+        <div class="slideshow-container desktop">
+          <img class='mac' src='/assets/macbook.png' alt='macbook'>
+          <div class="slides">
+            <div class="slides3">
+              <img class='slide-img' src='/assets/slideshow/kebb/kebb1.png' alt="kebb-bazaar">
+            </div>
+            <div class="slides3">
+              <img class='slide-img' src='/assets/slideshow/kebb/kebb2.png' alt="kebb-bazaar">
+            </div>
+            <div class="slides3">
+              <img class='slide-img' src='/assets/slideshow/kebb/kebb3.png' alt="kebb-bazaar">
+            </div>
+            <div class="slides3">
+              <img class='slide-img' src='/assets/slideshow/kebb/kebb4.png' alt="kebb-bazaar">
+            </div>
+            <div class="slides3">
+              <img class='slide-img' src='/assets/slideshow/kebb/kebb5.png' alt="kebb-bazaar">
+            </div>
+            <div class="slides3">
+              <img class='slide-img' src='/assets/slideshow/kebb/kebb6.png' alt="kebb-bazaar">
+            </div>
+            <div class="slides3">
+              <img class='slide-img' src='/assets/slideshow/kebb/kebb7.png' alt="kebb-bazaar">
+            </div>
+            <div class="slides3">
+              <img class='slide-img' src='/assets/slideshow/kebb/kebb8.png' alt="kebb-bazaar">
+            </div>
+            <button class="prev" name='prev' value=2 id='prev'>&#10094</button>
+            <button class="next" name='next' value=2 id='next'>&#10095</button>
+          </div>
+        </div>
+      <div class="description">
+        <h6>KEBB Bazaar</h6>
+        <p>A group project produced in 8 days using the MERN stack. Our group built a social app for
+          people in London to rent out items from their wardrobe, upload posts and connect with others through
+          adding comments, friends and ratings.
+        </p>
+        <div>
+          <button><a href="https://kebb-bazaar.herokuapp.com/about" target='_blank' rel='noopener noreferrer'>Open Project</a></button>
+          <button><a href="https://github.com/kamcconnell1/sei-group-project/blob/master/README.md" target='_blank'
+              rel='noopener noreferrer'><i class="devicon-github-plain"></i>GitHub</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="project" data-aos="fade-in-up" data-aos-anchor-placement="center-center">
+      <img class='mobile' src='/assets/minesweeper.png' alt='minesweeper'>
+      <div class="slideshow-container desktop">
+        <img class='mac' src='/assets/macbook.png' alt='macbook'>
+        <div class="slides">
+          <div class="slides4">
+            <img class='slide-img' id='slide-imgs-4' src='/assets/slideshow/minesweeper/mines1.png' alt="minesweeper">
+          </div>
+          <div class="slides4">
+            <img class='slide-img' id='slide-imgs-4' src='/assets/slideshow/minesweeper/mines2.png' alt="minesweeper">
+          </div>
+          <div class="slides4">
+            <img class='slide-img' id='slide-imgs-4' src='/assets/slideshow/minesweeper/mines3.png' alt="minesweeper">
+          </div>
+          <div class="slides4">
+            <img class='slide-img' id='slide-imgs-4' src='/assets/slideshow/minesweeper/mines4.png' alt="minesweeper">
+          </div>
+          <div class="slides4">
+            <img class='slide-img' id='slide-imgs-4' src='/assets/slideshow/minesweeper/mines5.png' alt="minesweeper">
+          </div>
+          <div class="slides4">
+            <img class='slide-img' id='slide-imgs-4' src='/assets/slideshow/minesweeper/mines6.png' alt="minesweeper">
+          </div>
+          <div class="slides4">
+            <img class='slide-img' id='slide-imgs-4' src='/assets/slideshow/minesweeper/mines7.png' alt="minesweeper">
+          </div>
+          <button class="prev" name='prev' value=0 id='prev'>&#10094</button>
+          <button class="next" name='next' value=0 id='next'>&#10095</button>
+        </div>
+      </div>
+      <div class="description">
+        <h6>Minesweeper</h6>
+        <p>A solo project produced in 9 days and my first project at GA. I used JavaScript, HTML and
+          CSS to make the classic computer game of Minesweeper. </p>
+        <div>
+          <button><a href="https://kamcconnell1.github.io/sei-project-one/" target='_blank'
+              rel='noopener noreferrer'>Open Project</a></button>
+          <button><a href="https://github.com/kamcconnell1/sei-project-one/blob/master/README.md" target='_blank'
+              rel='noopener noreferrer'><i class="devicon-github-plain"></i>GitHub</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class='nav' id='contact'></div>
+  <div class="contact-wrapper" >
+    <h3>Contact</h3>
+    <p class="contact__mail"><i class="fas fa-envelope"></i>kamcconnell1@gmail.com</p>
+    <p class="contact__linkedin"><i class="fab fa-linkedin"></i>linkedin.com/in/mcconnellkatie</p>
+    <p class="contact__github"><i class="fab fa-github-square"></i>github.com/kamcconnell1</p>
+  </div>
+</main>
 </body>
+<script>AOS.init({
+    duration: 2000
+  })</script>
+
 </html>

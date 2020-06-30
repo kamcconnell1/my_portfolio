@@ -1,0 +1,20 @@
+.contact-wrapper {
+  max-height: 30vh;
+  margin: 5vh 10vw;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  p{
+    font-family: $fontsub;
+    padding: 0.3rem;
+    &:last-of-type {
+      margin-bottom: 5vh;
+    }
+    i {
+      margin-right: 0.4rem;
+    }
+}
+}
