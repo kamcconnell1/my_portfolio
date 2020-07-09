@@ -8,7 +8,9 @@
   .title {
     display: flex;
     flex-direction: column;
-    
+    @media screen and (min-width: $laptop) {
+      margin-left: 10vw;
+    }
       h1, h2 {
         opacity:0;
         background: var(--main2);
@@ -45,6 +47,9 @@
       opacity: 0;
       transition: 200ms opacity ease-in-out;
       transition-delay: 1000ms;
+    }
+    @media screen and (min-width: $desktop) {
+     
     }
   }
 

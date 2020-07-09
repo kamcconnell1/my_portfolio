@@ -51,27 +51,6 @@ function init() {
     x[slideIndex[no] - 1].style.display = 'block'
   }
 
-  // function initialTheme() {
-  //   if (localStorage.getItem('theme') === 'dark') {
-  //     setTheme('dark')
-  //   } else {
-  //     setTheme('light')
-  //   }
-  // }
-
-  // function setTheme(themeName) {
-  //   localStorage.setItem('theme', themeName)
-  //   document.body.classList.add('dark')
-  // }
-
-  // function toggleTheme() {
-  //   if (localStorage.getItem('theme') === 'dark') {
-  //     setTheme('light')
-  //   } else {
-  //     setTheme('dark')
-  //   }
-  // }
-
   function setTheme(themeName) {
     localStorage.setItem('theme', themeName)
     document.documentElement.className = themeName

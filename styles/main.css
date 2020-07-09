@@ -126,7 +126,7 @@ h3::after {
   display: flex;
   align-items: center;
   height: 5rem;
-  width: 3rem;
+  width: 4rem;
   color: var(--fontcolormain);
   text-decoration: none;
   filter: grayscale(100%) opacity(0.7);
@@ -139,8 +139,8 @@ h3::after {
 .navbar .navbar-nav .nav-item .nav-link .link-text {
   display: none;
   font-family: "Open Sans", sans-serif;
-  font-size: 0.6rem;
-  font-weight: 400;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 .navbar .navbar-nav .nav-item .nav-link:hover {
   filter: grayscale(0%) opacity(1);
@@ -228,6 +228,11 @@ h3::after {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .intro-wrapper .title {
+    margin-left: 10vw;
+  }
+}
 .intro-wrapper .title h1, .intro-wrapper .title h2 {
   opacity: 0;
   background: var(--main2);
@@ -268,7 +273,6 @@ h3::after {
   transition: 200ms opacity ease-in-out;
   transition-delay: 1000ms;
 }
-
 .about-wrapper .about {
   display: flex;
   flex-direction: column;
@@ -277,6 +281,11 @@ h3::after {
 }
 .about-wrapper .about .about-left p {
   margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .about-wrapper .about .about-left p {
+    font-size: 0.9rem;
+  }
 }
 .about-wrapper .about .about-right {
   border: 1px solid var(--fontcolormain);
@@ -292,15 +301,24 @@ h3::after {
     flex-direction: row;
     align-items: flex-start;
   }
-  .about-wrapper .about .about-left, .about-wrapper .about .about-right {
+  .about-wrapper .about .about-left,
+.about-wrapper .about .about-right {
     flex-basis: 0;
     flex-grow: 1;
+  }
+  .about-wrapper .about .about-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-wrapper .about .about-left .interests {
+    margin-top: 4rem;
   }
   .about-wrapper .about .about-right {
     margin-left: 4rem;
     margin-top: 0;
   }
-  .about-wrapper .about .about-right .experience p, .about-wrapper .about .about-right .experience h6 {
+  .about-wrapper .about .about-right .experience p,
+.about-wrapper .about .about-right .experience h6 {
     font-size: 0.8rem;
   }
 }
@@ -434,7 +452,7 @@ h3::after {
 }
 @media screen and (min-width: 1024px) {
   .projects-wrapper .projects .project .description p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 .projects-wrapper .projects .project .description button {

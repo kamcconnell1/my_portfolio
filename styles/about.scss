@@ -1,5 +1,4 @@
 .about-wrapper {
-
   .about {
     display: flex;
     flex-direction: column;
@@ -8,6 +7,9 @@
     .about-left {
       p {
         margin-bottom: 1rem;
+        @media screen and (min-width: $laptop) {
+          font-size: 0.9rem;
+        }
       }
     }
     .about-right {
@@ -16,27 +18,34 @@
       border-radius: 10px;
       margin-top: 1rem;
       .experience {
-        margin: 1rem 0; 
+        margin: 1rem 0;
       }
     }
     @media screen and (min-width: $laptop) {
       flex-direction: row;
       align-items: flex-start;
-      .about-left, .about-right {
+      .about-left,
+      .about-right {
         flex-basis: 0;
         flex-grow: 1;
-
+      }
+      .about-left {
+        display: flex;
+        flex-direction: column;
+        .interests {
+          margin-top: 4rem;
+        }
       }
       .about-right {
         margin-left: 4rem;
         margin-top: 0;
         .experience {
-          
-          p, h6 {
+          p,
+          h6 {
             font-size: 0.8rem;
           }
         }
       }
     }
-    }
-    }
+  }
+}
