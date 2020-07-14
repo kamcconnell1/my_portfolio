@@ -50,11 +50,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #1e1e24;
+  background: var(--back-color);
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--fontcolormain);
+  background: var(--main1);
 }
 
 main {
@@ -492,14 +492,16 @@ h3::after {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
-.contact-wrapper p {
+.contact-wrapper a {
   font-family: "Open Sans", sans-serif;
   padding: 0.3rem;
+  text-decoration: none;
+  color: inherit;
 }
-.contact-wrapper p:last-of-type {
+.contact-wrapper a:last-of-type {
   margin-bottom: 5vh;
 }
-.contact-wrapper p i {
+.contact-wrapper a i {
   margin-right: 0.4rem;
 }
 

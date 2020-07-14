@@ -50,11 +50,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #1e1e24;
+  background: var(--back-color);
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--fontcolormain);
+  background: var(--main1);
 }
 main {
   margin-left: 3rem;
