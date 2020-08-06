@@ -394,20 +394,36 @@ h3::after {
     width: 650px;
     position: relative;
   }
+  .projects-wrapper .projects .project .slideshow-container .iphone {
+    height: 580px;
+  }
   .projects-wrapper .projects .project .slideshow-container .slides {
     position: absolute;
     width: 400px;
     top: 60px;
     left: 110px;
   }
-  .projects-wrapper .projects .project .slideshow-container .slides .slides1, .projects-wrapper .projects .project .slideshow-container .slides .slides2, .projects-wrapper .projects .project .slideshow-container .slides .slides3, .projects-wrapper .projects .project .slideshow-container .slides .slides4 {
+  .projects-wrapper .projects .project .slideshow-container .slides .slides0, .projects-wrapper .projects .project .slideshow-container .slides .slides2, .projects-wrapper .projects .project .slideshow-container .slides .slides3, .projects-wrapper .projects .project .slideshow-container .slides .slides4 {
     display: none;
   }
-  .projects-wrapper .projects .project .slideshow-container .slides .slides1 .slide-img, .projects-wrapper .projects .project .slideshow-container .slides .slides2 .slide-img, .projects-wrapper .projects .project .slideshow-container .slides .slides3 .slide-img, .projects-wrapper .projects .project .slideshow-container .slides .slides4 .slide-img {
+  .projects-wrapper .projects .project .slideshow-container .slides .slides0 .slide-img, .projects-wrapper .projects .project .slideshow-container .slides .slides2 .slide-img, .projects-wrapper .projects .project .slideshow-container .slides .slides3 .slide-img, .projects-wrapper .projects .project .slideshow-container .slides .slides4 .slide-img {
     width: 430px;
     height: 280px;
   }
-  .projects-wrapper .projects .project .slideshow-container .slides .prev, .projects-wrapper .projects .project .slideshow-container .slides .next {
+  .projects-wrapper .projects .project .slideshow-container .slides-mobile {
+    position: absolute;
+    top: 69px;
+    left: 229px;
+  }
+  .projects-wrapper .projects .project .slideshow-container .slides-mobile .slides1 {
+    display: none;
+  }
+  .projects-wrapper .projects .project .slideshow-container .slides-mobile .slides1 .slide-img-mobile {
+    top: 0;
+    width: 192px;
+    height: 440px;
+  }
+  .projects-wrapper .projects .project .slideshow-container .prev, .projects-wrapper .projects .project .slideshow-container .next {
     outline: none;
     border: none;
     position: absolute;
@@ -421,14 +437,21 @@ h3::after {
     border-radius: 0 3px 3px 0;
     user-select: none;
   }
-  .projects-wrapper .projects .project .slideshow-container .slides .prev.prev, .projects-wrapper .projects .project .slideshow-container .slides .next.prev {
+  .projects-wrapper .projects .project .slideshow-container .prev.img-mobile, .projects-wrapper .projects .project .slideshow-container .next.img-mobile {
+    top: 50%;
+    padding: 4px;
+  }
+  .projects-wrapper .projects .project .slideshow-container .prev.prev, .projects-wrapper .projects .project .slideshow-container .next.prev {
     left: 0;
   }
-  .projects-wrapper .projects .project .slideshow-container .slides .prev.next, .projects-wrapper .projects .project .slideshow-container .slides .next.next {
+  .projects-wrapper .projects .project .slideshow-container .prev.next, .projects-wrapper .projects .project .slideshow-container .next.next {
     border-radius: 3px 0 0 3px;
     right: -30px;
   }
-  .projects-wrapper .projects .project .slideshow-container .slides .prev.prev:hover, .projects-wrapper .projects .project .slideshow-container .slides .prev.next:hover, .projects-wrapper .projects .project .slideshow-container .slides .next.prev:hover, .projects-wrapper .projects .project .slideshow-container .slides .next.next:hover {
+  .projects-wrapper .projects .project .slideshow-container .prev.next.img-mobile, .projects-wrapper .projects .project .slideshow-container .next.next.img-mobile {
+    right: 0px;
+  }
+  .projects-wrapper .projects .project .slideshow-container .prev.prev:hover, .projects-wrapper .projects .project .slideshow-container .prev.next:hover, .projects-wrapper .projects .project .slideshow-container .next.prev:hover, .projects-wrapper .projects .project .slideshow-container .next.next:hover {
     background-color: #d5d5d5;
     color: #fff8ee;
   }

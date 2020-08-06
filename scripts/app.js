@@ -9,12 +9,13 @@ function init() {
   const ThemeButton = document.querySelector('#theme-button')
 
   
-  const slideIndex = [1, 1, 1, 1]
-  const slideId = ['slides4', 'slides2', 'slides3', 'slides1']
+  const slideIndex = [1, 1, 1, 1, 1]
+  const slideId = ['slides0', 'slides1', 'slides2', 'slides3', 'slides4']
   showSlides(1, 0)
   showSlides(1, 1)
   showSlides(1, 2)
   showSlides(1, 3)
+  showSlides(1, 4)
 
 
   function titlefade() {
