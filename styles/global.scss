@@ -27,14 +27,14 @@ $desktop: 1024px;
 * {
   padding: 0;
   margin: 0;
-  font-size: 10px;
+  font-size: 12px;
   font-family: $fontmain; 
 
 @media screen and (min-width: $tablet) {
-  font-size: 12px;
+  font-size: 14px;
 }
 @media screen and (min-width: $laptop) {
-  font-size: 15px;
+  font-size: 16px;
 }
 @media screen and (min-width: $desktop) {
   font-size: 20px;
