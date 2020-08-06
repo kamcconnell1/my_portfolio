@@ -376,7 +376,7 @@ h3::after {
   max-width: 1000px;
 }
 .projects-wrapper .projects .project:hover {
-  box-shadow: 6px 13px 37px -4px var(--fontcolormain);
+  box-shadow: 6px 13px 27px -9px var(--fontcolormain);
 }
 .projects-wrapper .projects .project img {
   display: block;
